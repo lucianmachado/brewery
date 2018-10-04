@@ -1,0 +1,77 @@
+.fridges {
+    margin-top: 100px;
+    margin-left: 80px;
+    width: 800px;
+    height: auto;
+    flex-grow: 3;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.fridge {
+    background-color: aliceblue;
+    border: solid black 1px;
+    width: 200px;
+    height: 270px;
+    margin: 5px;
+    position: relative;
+}
+
+.fridge .title {
+    font-size: 30px;
+    text-align: center;
+    background-color: rosybrown;
+}
+
+.open-fridge-button {
+    background-color: rosybrown;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    position: absolute;
+}
+
+.open-fridge-button:hover {
+    opacity: 0.75;
+    font-size: 12px;
+}
+
+.temperature {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #fff;
+    line-height: 150px;
+    text-align: center;
+    background-color: #000;
+    margin: 10px 20px;
+    display: block;
+}
+
+.temperature-value {
+    padding: 0px 22px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 2.4ch;
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+.blink {
+    animation-duration: 800ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: red;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

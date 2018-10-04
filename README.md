@@ -19,3 +19,5 @@
 - Melhoria no request handler
 - Melhorar organização do código do frontend
 - Melhoria no layout da app
+- Separar os componentes do frontend com seus respectivos codigos
+- Refatorar codigo do frontend
